@@ -7,6 +7,7 @@ import util.DBUtil;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Description:
@@ -61,12 +62,13 @@ public class GoddessDao {
     public List<Goddess> query() throws Exception {
         Connection connection = DBUtil.getConnection();
         Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery("select user_name,age from goddess");
+        ResultSet resultSet = statement.executeQuery("select id,user_name,age from goddess");
 
         List<Goddess> gs = new ArrayList<Goddess>();
         Goddess g = null;
         while (resultSet.next()) {
             g = new Goddess();
+            g.setId(resultSet.getInt("id"));
             g.setUserName(resultSet.getString("user_name"));
             g.setAge(resultSet.getInt("age"));
 
@@ -101,18 +103,21 @@ public class GoddessDao {
         return goddess;
     }
 
-    public List<Goddess> query(String name) throws SQLException {
+    public List<Goddess> query(String name,String mobail, String email) throws SQLException {
         List<Goddess> result = new ArrayList<Goddess>();
 
         Connection connection = DBUtil.getConnection();
         StringBuilder stringBuilder = new StringBuilder();
 
         stringBuilder.append("select * from goddess ");
-        stringBuilder.append(" where user_name = ?");
+        stringBuilder.append(" where user_name like ? and mobile like ? and email = ?");
 
         PreparedStatement preparedStatement = connection.prepareStatement(stringBuilder.toString());
-        preparedStatement.setString(1, name);
+        preparedStatement.setString(1, "%" + name + "%");
+        preparedStatement.setString(2, "%" + mobail + "%");
+        preparedStatement.setString(3, "%" + email + "%");
 
+        System.out.println(preparedStatement.toString());
         ResultSet resultSet = preparedStatement.executeQuery();
 
         Goddess goddess = null;
@@ -136,4 +141,48 @@ public class GoddessDao {
         }
         return result;
     }
+
+    public List<Goddess> query(List<Map<String, Object>> params) throws SQLException {
+        List<Goddess> result = new ArrayList<Goddess>();
+
+        Connection connection = DBUtil.getConnection();
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("select * from goddess where 1 = 1");
+
+        if (params!=null && params.size() > 0) {
+            for (int i = 0; i < params.size(); i++) {
+                Map<String, Object> map = params.get(i);
+                stringBuilder.append(" and " + " " + map.get("name") + " " + map.get("rela") + " " + map.get("value"));
+            }
+        }
+
+        PreparedStatement preparedStatement = connection.prepareStatement(stringBuilder.toString());
+
+        System.out.println(preparedStatement.toString());
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        Goddess goddess = null;
+        while (resultSet.next()) {
+            goddess = new Goddess();
+            goddess = new Goddess();
+            goddess.setId(resultSet.getInt("id"));
+            goddess.setUserName(resultSet.getString("user_name"));
+            goddess.setAge(resultSet.getInt("age"));
+            goddess.setSex(resultSet.getInt("sex"));
+            goddess.setBirthday(resultSet.getDate("birthday"));
+            goddess.setEmail(resultSet.getString("email"));
+            goddess.setMobile(resultSet.getString("mobile"));
+            goddess.setCreateUser(resultSet.getString("create_user"));
+            goddess.setCreateDate(resultSet.getDate("update_date"));
+            goddess.setUpdateDate(resultSet.getDate("update_date"));
+            goddess.setUpdateUser(resultSet.getString("update_user"));
+            goddess.setIsdel(resultSet.getInt("isDel"));
+
+            result.add(goddess);
+        }
+        return result;
+    }
+
+
+
 }
