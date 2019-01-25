@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>留言板</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body onload="window.scrollTo(0,document.body.scrollHeight); ">
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>留言板</h1>
+        <p>所有留言</p>
+    </div>
+    <div id="wordArea"></div>
+    <div>
+        <h2>留言</h2>
+        <input type="text" class="form-control s-margin-1" placeholder="标题" id="title">
+        <textarea class="form-control s-margin-1" placeholder="内容" rows="3" id="content"></textarea>
+        <button class="btn btn-primary s-margin-1" type="submit" onclick="leaveWord()">提交</button>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<script src="js/util.js"></script>
+<script type="application/javascript">
+    if(getCookie("user") == null)
+        window.location.href= address+"index.html";
+
+    var wordsNum = null;
+
+    initWords();
+    function initWords() {
+        var users = JSON.parse(getCookie("user"));
+        var user = {};
+        user.userId = users.userId;
+        var response;
+        $.ajax({
+            async : false,
+            type : 'POST',
+            url : address+"getWords",
+            data : user,
+            dataType : 'json',
+            success : function(result) {
+                response = result;
+            },
+            error : function(result) {
+                alert('服务器异常');
+            }
+        });
+        if(response.status == "0"){
+            var words = response.content;
+            words = eval("("+words+")");
+            wordsNum = words.length; // 给wordsNum赋值
+            var html = "";
+            for(var i=0;i<words.length;i++){
+                html+='<h2 class="s-margin-2">'+words[i].title+'&nbsp;&nbsp;<small>'+getUserName(words[i].userId)+'</small></h2>'+
+                    '        <hr>'+
+                    '        <h5>'+words[i].content+'</h5>';
+            }
+            document.getElementById("wordArea").innerHTML = html;
+        }
+        else{
+            alert(response.content);
+        }
+    }
+
+    function leaveWord() {
+        var users = JSON.parse(getCookie("user"));
+        var word = {};
+        word.title = document.getElementById("title").value;
+        word.content = document.getElementById("content").value;
+        word.userId = users.userId;
+        var response;
+        $.ajax({
+            async : false,
+            type : 'POST',
+            url : address+"leaveWord",
+            data : word,
+            dataType : 'json',
+            success : function(result) {
+                response = result;
+            },
+            error : function(result) {
+                alert('服务器异常');
+            }
+        });
+        if(response.status == "0"){
+            document.getElementById("wordArea").innerHTML += '<h2 class="s-margin-2">'+word.title+'&nbsp;&nbsp;<small>'+getUserName(word.userId)+'</small></h2>'+
+                '        <hr>'+
+                '        <h5>'+word.content+'</h5>';
+
+            wordsNum++;
+        } else{
+            alert(response.content);
+        }
+    }
+
+    setInterval(function(){
+        var users = JSON.parse(getCookie("user"));
+        var user = {};
+        user.userId = users.userId;
+        var response;
+        $.ajax({
+            async : false,
+            type : 'POST',
+            url : address+"getWords",
+            data : user,
+            dataType : 'json',
+            success : function(result) {
+                response = result;
+            },
+            error : function(result) {
+                alert('服务器异常');
+            }
+        });
+        if(response.status == "0"){
+            var words = response.content;
+            words = eval("("+words+")");
+            var html = "";
+            if (words.length > wordsNum) {
+                for(var i=0;i<words.length;i++){
+                    html+='<h2 class="s-margin-2">'+words[i].title+'&nbsp;&nbsp;<small>'+getUserName(words[i].userId)+'</small></h2>'+
+                        '        <hr>'+
+                        '        <h5>'+words[i].content+'</h5>';
+                }
+                document.getElementById("wordArea").innerHTML = html;
+            }
+        }
+    },1000); //指定1秒刷新一次
+</script>
+</body>
+</html>

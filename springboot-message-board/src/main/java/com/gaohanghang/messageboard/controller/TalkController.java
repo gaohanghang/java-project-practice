@@ -1,6 +1,6 @@
 package com.gaohanghang.messageboard.controller;
 
-import com.gaohanghang.messageboard.dao.WordRepository;
+import com.gaohanghang.messageboard.service.TalkService;
 import com.gaohanghang.messageboard.service.WordService;
 import com.gaohanghang.messageboard.utils.Response;
 import io.swagger.annotations.Api;
@@ -16,24 +16,29 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2019/01/25 12:06
  */
 @RestController
-@Api(description = "关于留言的操作", tags = "word")
-public class WordController {
+@Api(description = "关于聊天的操作", tags = "word")
+public class TalkController {
 
     @Autowired
-    WordService wordService;
+    TalkService talkService;
 
 
-    @ApiOperation(value = "添加留言")
-    @PostMapping(value = "/leaveWord")
-    public Response addWord(@RequestParam("userId")Integer userId,
-                            @RequestParam("title")String title,
+    @ApiOperation(value = "添加聊天")
+    @PostMapping(value = "/addTalk")
+    public Response addTalk(@RequestParam("userId")Integer userId,
                             @RequestParam("content")String content) {
-        return wordService.addWord(userId, title, content);
+        return talkService.addTalk(userId, content);
     }
 
-    @ApiOperation(value = "根据userId获取留言")
-    @PostMapping(value = "/getWords")
+    @ApiOperation(value = "根据userId获取聊天")
+    @PostMapping(value = "/getTalks")
     public Response getWords(@RequestParam("userId") Integer userId) {
-        return wordService.getWords(userId);
+        return talkService.getTalks(userId);
+    }
+
+    @ApiOperation(value = "获取聊天条数")
+    @PostMapping(value = "/getSize")
+    public Response getSize(@RequestParam("userId") Integer userId) {
+        return talkService.getSize(userId);
     }
 }

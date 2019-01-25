@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService {
     public Response getUser(Integer userId) {
         User user = null;
         if ((user = userRepository.findById(userId).get()) != null)
-            return new Response("0", user);
+            return new Response("0", JSON.toJSONString(user));
         else
             return new Response("-1", "用户不存在");
     }
@@ -44,7 +44,7 @@ public class UserServiceImpl implements UserService {
             user.setRegisterTime(CommonTools.getCurrentTime());
             user = userRepository.save(user);
             user.setUserPassword("");
-            return new Response("0", user);
+            return new Response("0", JSON.toJSONString(user));
         }catch (Exception e){
             return new Response("-1", "插入用户异常");
         }
@@ -60,7 +60,7 @@ public class UserServiceImpl implements UserService {
         if (user != null) {
             if (user.getUserPassword().equals(userPassword)) {
                 user.setUserPassword("");
-                return new Response("0", user);
+                return new Response("0", JSON.toJSONString(user));
             } else {
                 return new Response("-1", "密码错误");
             }

@@ -28,9 +28,9 @@ public class WordServiceImpl implements WordService {
 
     @Override
     public Response getWords(Integer userId) {
-        List<Word> words = wordRepository.findAll();
+        List<Word> words = wordRepository.findAllByOrderByLeaveTime();
         if (words.size() > 0) {
-            return new Response("0", words);
+            return new Response("0", JSON.toJSONString(words));
         } else {
             return new Response("0", "没有留言");
         }
@@ -50,6 +50,6 @@ public class WordServiceImpl implements WordService {
         word.setContent(content);
         word.setLeaveTime(CommonTools.getCurrentTime());
         wordRepository.save(word);
-        return new Response("0", word);
+        return new Response("0", JSON.toJSONString(word));
     }
 }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>聊天</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body onload="window.scrollTo(0,document.body.scrollHeight); ">
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>公共聊天区</h1>
+        <p>所有内容</p>
+    </div>
+    <div id="talkArea"></div>
+    <div>
+        <h2>发送聊天内容</h2>
+        <textarea class="form-control s-margin-1" placeholder="内容" rows="3" id="content"></textarea>
+        <button class="btn btn-primary s-margin-1" type="submit" onclick="addTalk()">发送</button>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<script src="js/util.js"></script>
+<script type="application/javascript">
+    if(getCookie("user") == null)
+        window.location.href= address+"index.html";
+
+    var talksNum = null;
+
+    initTalks();
+    function initTalks() {
+        var users = JSON.parse(getCookie("user"));
+        var user = {};
+        user.userId = users.userId;
+        var response;
+        $.ajax({
+            async : false,
+            type : 'POST',
+            url : address+"getTalks",
+            data : user,
+            dataType : 'json',
+            success : function(result) {
+                response = result;
+            },
+            error : function(result) {
+                alert('服务器异常');
+            }
+        });
+        if(response.status == "0"){
+            var talks = response.content;
+            talks = eval("("+talks+")");
+            talksNum = talks.length; // 给talksNum赋值
+            var html = "";
+            for(var i=0;i<talks.length;i++){
+                html+='<h2 class="s-margin-2">'+talks[i].content+'&nbsp;&nbsp;<small>'+getUserName(talks[i].userId)+'</small></h2>'+
+                    '        <hr>';
+            }
+            document.getElementById("talkArea").innerHTML = html;
+        }
+        else{
+            alert(response.content);
+        }
+    }
+
+    function addTalk() {
+        var users = JSON.parse(getCookie("user"));
+        var talk = {};
+        talk.content = document.getElementById("content").value;
+        talk.userId = users.userId;
+        var response;
+        $.ajax({
+            async : false,
+            type : 'POST',
+            url : address+"addTalk",
+            data : talk,
+            dataType : 'json',
+            success : function(result) {
+                response = result;
+            },
+            error : function(result) {
+                alert('服务器异常');
+            }
+        });
+        if(response.status == "0"){
+            document.getElementById("talkArea").innerHTML +='<h2 class="s-margin-2">'+talk.content+'&nbsp;&nbsp;<small>'+getUserName(talk.userId)+'</small></h2>'+
+                '        <hr>';
+            talksNum++;
+            window.scrollTo(0,document.body.scrollHeight)
+        } else{
+            alert(response.content);
+        }
+    }
+
+    setInterval(function(){
+        // 获取用户信息
+        var users = JSON.parse(getCookie("user"));
+        var user = {};
+        user.userId = users.userId;
+
+        // 获取所有聊天数据
+        var response;
+        $.ajax({
+            async : false,
+            type : 'POST',
+            url : address+"getTalks",
+            data : user,
+            dataType : 'json',
+            success : function(result) {
+                response = result;
+            },
+            error : function(result) {
+                alert('服务器异常');
+            }
+        });
+        if(response.status == "0"){
+            var talks = response.content;
+            talks = eval("("+talks+")");
+            var html = "";
+            if (talks.length > talksNum) {
+                for(var i=0;i<talks.length;i++){
+                    html+='<h2 class="s-margin-2">'+talks[i].content+'&nbsp;&nbsp;<small>'+getUserName(talks[i].userId)+'</small></h2>'+
+                        '        <hr>';
+                }
+                document.getElementById("talkArea").innerHTML = html;
+                window.scrollTo(0,document.body.scrollHeight)
+                talksNum = talks.length;
+            }
+        }
+    },1000); //指定1秒刷新一次
+</script>
+</body>
+</html>
