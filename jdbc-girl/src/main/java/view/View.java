@@ -110,7 +110,6 @@ public class View {
             }else{
                 System.out.println("您输入的值为:"+in);
             }
-
         }
     }
 }
