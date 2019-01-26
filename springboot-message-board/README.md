@@ -12,6 +12,8 @@
     
 ## 快速开始
 
+创建数据库: messageboard
+
 导入项目后，运行DemoApplication.java
 
 ## Swagger接口文档
@@ -31,3 +33,8 @@
 
 - 实时在线聊天
 - swagger查看接口文档
+
+# 待优化
+
+- address路径动态化
+- 

@@ -20,4 +20,4 @@ spring:
     time-zone: GMT+8
   mvc:
     favicon:
-      enable=false:
+      enable: false
