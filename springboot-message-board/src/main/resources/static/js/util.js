@@ -1,4 +1,4 @@
-var address = "http://localhost:8080/messageBoard/";
+var address = "http://" + location.host + "/messageBoard/";
 
 function setCookie(name, value, days) {
     var d = new Date;
