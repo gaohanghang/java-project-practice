@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * @Description:
@@ -16,7 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2019/01/25 12:06
  */
 @RestController
-@Api(description = "关于聊天的操作", tags = "word")
+@EnableSwagger2 // 启动swagger注解
+@Api(description = "关于聊天的操作", tags = "talk")
 public class TalkController {
 
     @Autowired
