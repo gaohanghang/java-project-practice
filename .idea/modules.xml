@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/jdbc-games-store/jdbc-games-store.iml" filepath="$PROJECT_DIR$/jdbc-games-store/jdbc-games-store.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdbc-girl/jdbc-girl.iml" filepath="$PROJECT_DIR$/jdbc-girl/jdbc-girl.iml" />
       <module fileurl="file://$PROJECT_DIR$/project-practice.iml" filepath="$PROJECT_DIR$/project-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-easy-demo/rpc-easy-demo.iml" filepath="$PROJECT_DIR$/rpc-easy-demo/rpc-easy-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-mail/spring-boot-mail.iml" filepath="$PROJECT_DIR$/spring-boot-mail/spring-boot-mail.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-message-board/springboot-message-board.iml" filepath="$PROJECT_DIR$/springboot-message-board/springboot-message-board.iml" />
     </modules>
   </component>

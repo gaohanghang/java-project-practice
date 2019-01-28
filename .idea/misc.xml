@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/jdbc-girl/pom.xml" />
         <option value="$PROJECT_DIR$/io-download-picture/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-message-board/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-mail/pom.xml" />
       </list>
     </option>
   </component>

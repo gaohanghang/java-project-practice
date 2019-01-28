@@ -2,6 +2,7 @@
 
 [jdbc实战之对面的女孩看过来](/jdbcgirl/README.md)
 
-[jdbc实现游戏商城](/jdbc-games-store/README.md)
+[使用io流实现简易图片下载功能](/io-download-picture/)
 
-[io给定url和存放路径下载](/io-download-picture/)
+[SpringBoot实现在线聊天和留言板功能](/springboot-message-board)
+

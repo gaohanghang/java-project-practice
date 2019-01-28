@@ -9,6 +9,7 @@
         <module name="io-download-picture" />
         <module name="jdbc-games-store" />
         <module name="jdbc-girl" />
+        <module name="spring-boot-mail" />
         <module name="springboot-message-board" />
       </profile>
     </annotationProcessing>
@@ -16,11 +17,13 @@
       <module name="io-download-picture" target="1.5" />
       <module name="jdbc-games-store" target="1.5" />
       <module name="jdbc-girl" target="1.5" />
+      <module name="spring-boot-mail" target="1.8" />
       <module name="springboot-message-board" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-mail" options="-parameters" />
       <module name="springboot-message-board" options="-parameters" />
     </option>
   </component>
