@@ -1,0 +1,2 @@
+2019-01-22 19:08:49,661 INFO [entity.Card] - sql: com.mysql.cj.jdbc.PreparedStatement@470f1802: UPDATE card set id = '2', name = 'dd', class_name = 'dd', password = 'dd' where id ='1'
+  

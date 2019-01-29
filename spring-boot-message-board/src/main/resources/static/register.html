@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>注册</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<div class="container">
+    <div class="col-sm-4 col-md-4 col-lg-4 location">
+        <div class="form-signin text-center">
+            <h2 class="form-signin-heading">请注册</h2>
+            <label for="inputUserName" class="sr-only">用户名</label>
+            <input type="email" id="inputUserName" class="form-control s-margin-2" placeholder="用户名" required autofocus>
+            <label for="inputPassword" class="sr-only">密码</label>
+            <input type="password" id="inputPassword" class="form-control s-margin-1" placeholder="密码" required>
+            <button class="btn btn-lg btn-primary btn-block s-margin-2" onclick="userRegister()">注册</button>
+            <button class="btn btn-lg btn-default btn-block s-margin-2" onclick="toLogin()">登录</button>
+        </div>
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<script src="js/util.js"></script>
+<script type="application/javascript">
+    function userRegister() {
+        var user = {};
+        user.userName = document.getElementById("inputUserName").value;
+        user.userPassword = document.getElementById("inputPassword").value;
+        var response;
+        $.ajax({
+            async : false,
+            type : 'POST',
+            url : address+"userRegister",
+            data : user,
+            dataType : 'json',
+            success : function(result) {
+                response = result;
+            },
+            error : function(result) {
+                alert('服务器异常');
+            }
+        });
+        if(response.status == "0"){
+            setCookie("user",response.content,1);
+            window.location.href=address+"talk.html";
+        }
+        else{
+            alert(response.content);
+        }
+    }
+
+    function toLogin() {
+        window.location.href = address+"register.html";
+    }
+</script>
+</body>
+</html>

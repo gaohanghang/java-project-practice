@@ -11,6 +11,11 @@
         <option value="$PROJECT_DIR$/io-download-picture/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-message-board/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-mail/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-excel-import/pom.xml" />
+        <option value="$PROJECT_DIR$/project-common/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-easy-excel-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/jdbc-easy-meal-card-system/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-message-board/pom.xml" />
       </list>
     </option>
   </component>

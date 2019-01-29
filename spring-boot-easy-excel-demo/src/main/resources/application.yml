@@ -1,0 +1,9 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /easy-excel-demo
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/excel?characterEncoding=utf8&useSSL=false
+    username: root
+    password: root

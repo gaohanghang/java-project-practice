@@ -7,23 +7,34 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="io-download-picture" />
+        <module name="jdbc-easy-meal-card-system" />
         <module name="jdbc-games-store" />
         <module name="jdbc-girl" />
+        <module name="project-common" />
+        <module name="spring-boot-easy-excel-demo" />
         <module name="spring-boot-mail" />
+        <module name="spring-boot-message-board" />
         <module name="springboot-message-board" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="io-download-picture" target="1.5" />
+      <module name="jdbc-easy-meal-card-system" target="1.5" />
       <module name="jdbc-games-store" target="1.5" />
       <module name="jdbc-girl" target="1.5" />
+      <module name="project-common" target="1.5" />
+      <module name="spring-boot-easy-excel-demo" target="1.8" />
       <module name="spring-boot-mail" target="1.8" />
+      <module name="spring-boot-message-board" target="1.8" />
       <module name="springboot-message-board" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="project-common" options="" />
+      <module name="spring-boot-easy-excel-demo" options="-parameters" />
       <module name="spring-boot-mail" options="-parameters" />
+      <module name="spring-boot-message-board" options="-parameters" />
       <module name="springboot-message-board" options="-parameters" />
     </option>
   </component>
