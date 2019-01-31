@@ -10,4 +10,4 @@
 
 [SpringBoot+easyexcel实现excel导入下载功能](/spring-boot-easy-excel-demo)
 
-[SpringBoot实现邮件发送给您](/spring-boot-mail)
+[SpringBoot实现邮件发送 未完成](/spring-boot-mail)

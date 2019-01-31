@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-easy-excel-demo/spring-boot-easy-excel-demo.iml" filepath="$PROJECT_DIR$/spring-boot-easy-excel-demo/spring-boot-easy-excel-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mail/spring-boot-mail.iml" filepath="$PROJECT_DIR$/spring-boot-mail/spring-boot-mail.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-message-board/spring-boot-message-board.iml" filepath="$PROJECT_DIR$/spring-boot-message-board/spring-boot-message-board.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-mongodb/spring-boot-mongodb.iml" filepath="$PROJECT_DIR$/spring-boot-mongodb/spring-boot-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-message-board/springboot-message-board.iml" filepath="$PROJECT_DIR$/spring-boot-message-board/springboot-message-board.iml" />
     </modules>
   </component>

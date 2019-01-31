@@ -14,6 +14,7 @@
         <module name="spring-boot-easy-excel-demo" />
         <module name="spring-boot-mail" />
         <module name="spring-boot-message-board" />
+        <module name="spring-boot-mongodb" />
         <module name="springboot-message-board" />
       </profile>
     </annotationProcessing>
@@ -26,6 +27,7 @@
       <module name="spring-boot-easy-excel-demo" target="1.8" />
       <module name="spring-boot-mail" target="1.8" />
       <module name="spring-boot-message-board" target="1.8" />
+      <module name="spring-boot-mongodb" target="1.8" />
       <module name="springboot-message-board" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -35,6 +37,7 @@
       <module name="spring-boot-easy-excel-demo" options="-parameters" />
       <module name="spring-boot-mail" options="-parameters" />
       <module name="spring-boot-message-board" options="-parameters" />
+      <module name="spring-boot-mongodb" options="-parameters" />
       <module name="springboot-message-board" options="-parameters" />
     </option>
   </component>
