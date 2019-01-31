@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:task="http://www.springframework.org/schema/task" xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+    <!-- 配置任务线程池 -->
+    <task:executor id="executor" pool-size="5"/>
+    <task:scheduler id="scheduler" pool-size="5"/>
+    <!-- 启用注解驱动的定时任务 -->
+    <task:annotation-driven executor="executor" scheduler="scheduler"  proxy-target-class="true"/>
+    <task:scheduled-tasks scheduler="scheduler">
+        <!-- 统计失败邮件定时重新发送 -->
+        <task:scheduled ref="sendMail" method="sendMail" cron="0/60 * * * * ?"/>
+    </task:scheduled-tasks>
+</beans>

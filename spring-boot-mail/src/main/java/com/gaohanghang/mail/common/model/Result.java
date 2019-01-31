@@ -9,6 +9,7 @@ import java.util.Map;
  * @date 2019/01/26 22:14
  */
 public class Result extends HashMap<String, Object> {
+
     private static final long serialVersionUID = 1L;
 
     public Result() {
