@@ -2,6 +2,8 @@
 
 [使用io流实现简易图片下载功能](/io-download-picture/)
 
+[socket实现登录注册文件上传](/socket-study)
+
 [jdbc实现简易饭卡系统](/jdbc-easy-meal-card-system)
 
 [jdbc实战之对面的女孩看过来](/jdbc-girl)
