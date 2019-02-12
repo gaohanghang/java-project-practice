@@ -17,6 +17,11 @@
         <option value="$PROJECT_DIR$/jdbc-easy-meal-card-system/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-message-board/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-mongodb/pom.xml" />
+        <option value="$PROJECT_DIR$/financial-system/pom.xml" />
+        <option value="$PROJECT_DIR$/socket-study/pom.xml" />
+        <option value="$PROJECT_DIR$/jms-test/pom.xml" />
+        <option value="$PROJECT_DIR$/jmsspring/pom.xml" />
+        <option value="$PROJECT_DIR$/jms-spring/pom.xml" />
       </list>
     </option>
   </component>

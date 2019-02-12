@@ -6,10 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="financial-system" />
         <module name="io-download-picture" />
         <module name="jdbc-easy-meal-card-system" />
         <module name="jdbc-games-store" />
         <module name="jdbc-girl" />
+        <module name="jms-spring" />
+        <module name="jms-test" />
         <module name="project-common" />
         <module name="spring-boot-easy-excel-demo" />
         <module name="spring-boot-mail" />
@@ -19,25 +22,34 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="com.gaohanghang.spring-boot-course-manage-system.main" target="1.8" />
+      <module name="com.gaohanghang.spring-boot-course-manage-system.test" target="1.8" />
+      <module name="financial-system" target="1.8" />
       <module name="io-download-picture" target="1.5" />
       <module name="jdbc-easy-meal-card-system" target="1.5" />
       <module name="jdbc-games-store" target="1.5" />
       <module name="jdbc-girl" target="1.5" />
+      <module name="jms-spring" target="1.5" />
+      <module name="jms-test" target="1.5" />
       <module name="project-common" target="1.5" />
+      <module name="socketdemo" target="1.5" />
       <module name="spring-boot-easy-excel-demo" target="1.8" />
       <module name="spring-boot-mail" target="1.8" />
       <module name="spring-boot-message-board" target="1.8" />
       <module name="spring-boot-mongodb" target="1.8" />
+      <module name="spring-boot-outh2" target="1.8" />
       <module name="springboot-message-board" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="financial-system" options="-parameters" />
       <module name="project-common" options="" />
       <module name="spring-boot-easy-excel-demo" options="-parameters" />
       <module name="spring-boot-mail" options="-parameters" />
       <module name="spring-boot-message-board" options="-parameters" />
       <module name="spring-boot-mongodb" options="-parameters" />
+      <module name="spring-boot-outh2" options="-parameters" />
       <module name="springboot-message-board" options="-parameters" />
     </option>
   </component>

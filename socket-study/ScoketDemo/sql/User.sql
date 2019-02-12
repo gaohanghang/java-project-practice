@@ -7,5 +7,5 @@ create table tb_user{
 create table tb_file{
   fid int auto_increment primary key,
   fname varchar(50) not null,
-  fcontent blob
+  fcontent longblob
 };

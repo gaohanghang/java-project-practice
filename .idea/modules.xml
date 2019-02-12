@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.gaohanghang.spring-boot-course-manage-system.iml" filepath="$PROJECT_DIR$/.idea/modules/com.gaohanghang.spring-boot-course-manage-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.gaohanghang.spring-boot-course-manage-system.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.gaohanghang.spring-boot-course-manage-system.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.gaohanghang.spring-boot-course-manage-system.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.gaohanghang.spring-boot-course-manage-system.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/financial-system/financial-system.iml" filepath="$PROJECT_DIR$/financial-system/financial-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/io-download-picture/io-download-picture.iml" filepath="$PROJECT_DIR$/io-download-picture/io-download-picture.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdbc-easy-meal-card-system/jdbc-easy-meal-card-system.iml" filepath="$PROJECT_DIR$/jdbc-easy-meal-card-system/jdbc-easy-meal-card-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdbc-games-store/jdbc-games-store.iml" filepath="$PROJECT_DIR$/jdbc-games-store/jdbc-games-store.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdbc-girl/jdbc-girl.iml" filepath="$PROJECT_DIR$/jdbc-girl/jdbc-girl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jms-spring/jms-spring.iml" filepath="$PROJECT_DIR$/jms-spring/jms-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jms-test/jms-test.iml" filepath="$PROJECT_DIR$/jms-test/jms-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/project-common/project-common.iml" filepath="$PROJECT_DIR$/project-common/project-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/project-practice.iml" filepath="$PROJECT_DIR$/project-practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpc-easy-demo/rpc-easy-demo.iml" filepath="$PROJECT_DIR$/rpc-easy-demo/rpc-easy-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/socket-study/socket-study.iml" filepath="$PROJECT_DIR$/socket-study/socket-study.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-easy-excel-demo/spring-boot-easy-excel-demo.iml" filepath="$PROJECT_DIR$/spring-boot-easy-excel-demo/spring-boot-easy-excel-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mail/spring-boot-mail.iml" filepath="$PROJECT_DIR$/spring-boot-mail/spring-boot-mail.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-message-board/spring-boot-message-board.iml" filepath="$PROJECT_DIR$/spring-boot-message-board/spring-boot-message-board.iml" />
