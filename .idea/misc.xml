@@ -22,6 +22,7 @@
         <option value="$PROJECT_DIR$/jms-test/pom.xml" />
         <option value="$PROJECT_DIR$/jmsspring/pom.xml" />
         <option value="$PROJECT_DIR$/jms-spring/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-mail-practice/pom.xml" />
       </list>
     </option>
   </component>
