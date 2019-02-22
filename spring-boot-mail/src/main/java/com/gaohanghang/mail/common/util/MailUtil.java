@@ -28,33 +28,6 @@ public class MailUtil {
     // 统计
     private final AtomicInteger count = new AtomicInteger(1);
 
-    /**
-     * 获取 Sender 多实例发送
-     * @return
-     */
-    public static JavaMailSenderImpl createMailSender() {
-        JavaMailSenderImpl sender = new JavaMailSenderImpl();
-        sender.setHost("smtp.mxhichina.com");
-        sender.setPort(25);
-        sender.setUsername("admin@52itstyle.com");
-        sender.setPassword("123456");
-        sender.setDefaultEncoding("Utf-8");
-        Properties p = new Properties();
-        p.setProperty("mail.smtp.timeout",1000+"");
-        p.setProperty("mail.smtp.auth","true");
-        sender.setJavaMailProperties(p);
-        return sender;
-    }
-
-    public static void main(String[] args) {
-        SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("admin@52itstyle.com");
-        message.setTo("345849402@qq.com");
-        message.setSubject("测试");
-        message.setText("测试");
-        createMailSender().send(message);
-    }
-
     public void start(final JavaMailSender mailSender, final SimpleMailMessage message) {
         service.execute(() -> {
             try {
@@ -84,5 +57,32 @@ public class MailUtil {
                 logger.error("send email fail", e);
             }
         });
+    }
+
+    /**
+     * 获取 Sender 多实例发送
+     * @return
+     */
+    public static JavaMailSenderImpl createMailSender() {
+        JavaMailSenderImpl sender = new JavaMailSenderImpl();
+        sender.setHost("smtp.mxhichina.com");
+        sender.setPort(25);
+        sender.setUsername("admin@52itstyle.com");
+        sender.setPassword("123456");
+        sender.setDefaultEncoding("Utf-8");
+        Properties p = new Properties();
+        p.setProperty("mail.smtp.timeout",1000+"");
+        p.setProperty("mail.smtp.auth","true");
+        sender.setJavaMailProperties(p);
+        return sender;
+    }
+
+    public static void main(String[] args) {
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setFrom("admin@52itstyle.com");
+        message.setTo("345849402@qq.com");
+        message.setSubject("测试");
+        message.setText("测试");
+        createMailSender().send(message);
     }
 }

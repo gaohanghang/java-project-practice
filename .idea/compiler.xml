@@ -15,6 +15,7 @@
         <module name="jms-test" />
         <module name="project-common" />
         <module name="spring-boot-easy-excel-demo" />
+        <module name="spring-boot-elasticsearch" />
         <module name="spring-boot-mail" />
         <module name="spring-boot-mail-practice" />
         <module name="spring-boot-message-board" />
@@ -35,6 +36,7 @@
       <module name="project-common" target="1.5" />
       <module name="socketdemo" target="1.5" />
       <module name="spring-boot-easy-excel-demo" target="1.8" />
+      <module name="spring-boot-elasticsearch" target="1.8" />
       <module name="spring-boot-mail" target="1.8" />
       <module name="spring-boot-mail-practice" target="1.8" />
       <module name="spring-boot-message-board" target="1.8" />
@@ -48,6 +50,7 @@
       <module name="financial-system" options="-parameters" />
       <module name="project-common" options="" />
       <module name="spring-boot-easy-excel-demo" options="-parameters" />
+      <module name="spring-boot-elasticsearch" options="-parameters" />
       <module name="spring-boot-mail" options="-parameters" />
       <module name="spring-boot-mail-practice" options="-parameters" />
       <module name="spring-boot-message-board" options="-parameters" />

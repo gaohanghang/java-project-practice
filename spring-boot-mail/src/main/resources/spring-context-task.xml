@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:task="http://www.springframework.org/schema/task" xmlns="http://www.springframework.org/schema/beans"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
-
-    <!-- 配置任务线程池 -->
-    <task:executor id="executor" pool-size="5"/>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:task="http://www.springframework.org/schema/task" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns="http://www.springframework.org/schema/beans"
+    xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+   
+    <!-- 配置任务线性池 -->
+    <task:executor  id="executor" pool-size="5" /> 
     <task:scheduler id="scheduler" pool-size="5"/>
     <!-- 启用注解驱动的定时任务 -->
     <task:annotation-driven executor="executor" scheduler="scheduler"  proxy-target-class="true"/>
     <task:scheduled-tasks scheduler="scheduler">
         <!-- 统计失败邮件定时重新发送 -->
-        <task:scheduled ref="sendMail" method="sendMail" cron="0/60 * * * * ?"/>
+        <task:scheduled ref="sendMail" method="sendMail" cron="0/60 * * * * ?"/>  
     </task:scheduled-tasks>
-</beans>
+</beans> 
