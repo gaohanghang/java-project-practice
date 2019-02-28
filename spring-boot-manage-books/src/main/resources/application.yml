@@ -14,13 +14,10 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
   mail:
-    host: smtp:163.com
+    host: smtp.163.com
     username: 18595739675@163.com
     password: 1124512195
-    properties:
-      mail.smtp.auth: true
-      mail.smtp.starttls.enable: true
-      mail.smtp.starttls.required: true
+    default-encoding: utf-8
 mybatis:
   mapper-locations: classpath:Mapper/*.xml
   type-aliases-package: com.gaohanghang.springbootmanagebooks.entity
