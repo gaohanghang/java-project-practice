@@ -3,6 +3,7 @@
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$/financial-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/project-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-course-manage-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-easy-excel-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-elasticsearch" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-mail" charset="UTF-8" />
@@ -10,5 +11,6 @@
     <file url="file://$PROJECT_DIR$/spring-boot-manage-books" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-message-board" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-mongodb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-student-manage-system" charset="UTF-8" />
   </component>
 </project>

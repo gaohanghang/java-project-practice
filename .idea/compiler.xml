@@ -14,6 +14,7 @@
         <module name="jms-spring" />
         <module name="jms-test" />
         <module name="project-common" />
+        <module name="spring-boot-course-manage-system" />
         <module name="spring-boot-easy-excel-demo" />
         <module name="spring-boot-elasticsearch" />
         <module name="spring-boot-mail" />
@@ -21,6 +22,7 @@
         <module name="spring-boot-manage-books" />
         <module name="spring-boot-message-board" />
         <module name="spring-boot-mongodb" />
+        <module name="spring-boot-student-manage-system" />
         <module name="springboot-message-board" />
       </profile>
     </annotationProcessing>
@@ -36,6 +38,7 @@
       <module name="jms-test" target="1.5" />
       <module name="project-common" target="1.5" />
       <module name="socketdemo" target="1.5" />
+      <module name="spring-boot-course-manage-system" target="1.8" />
       <module name="spring-boot-easy-excel-demo" target="1.8" />
       <module name="spring-boot-elasticsearch" target="1.8" />
       <module name="spring-boot-mail" target="1.8" />
@@ -44,6 +47,7 @@
       <module name="spring-boot-message-board" target="1.8" />
       <module name="spring-boot-mongodb" target="1.8" />
       <module name="spring-boot-outh2" target="1.8" />
+      <module name="spring-boot-student-manage-system" target="1.8" />
       <module name="springboot-message-board" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -51,6 +55,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="financial-system" options="-parameters" />
       <module name="project-common" options="" />
+      <module name="spring-boot-course-manage-system" options="-parameters" />
       <module name="spring-boot-easy-excel-demo" options="-parameters" />
       <module name="spring-boot-elasticsearch" options="-parameters" />
       <module name="spring-boot-mail" options="-parameters" />
@@ -59,6 +64,7 @@
       <module name="spring-boot-message-board" options="-parameters" />
       <module name="spring-boot-mongodb" options="-parameters" />
       <module name="spring-boot-outh2" options="-parameters" />
+      <module name="spring-boot-student-manage-system" options="-parameters" />
       <module name="springboot-message-board" options="-parameters" />
     </option>
   </component>

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.gaohanghang.spring-boot-course-manage-system.iml" filepath="$PROJECT_DIR$/.idea/modules/com.gaohanghang.spring-boot-course-manage-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.gaohanghang.spring-boot-course-manage-system.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.gaohanghang.spring-boot-course-manage-system.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.gaohanghang.spring-boot-course-manage-system.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.gaohanghang.spring-boot-course-manage-system.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/financial-system/financial-system.iml" filepath="$PROJECT_DIR$/financial-system/financial-system.iml" />
@@ -16,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/project-practice.iml" filepath="$PROJECT_DIR$/project-practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpc-easy-demo/rpc-easy-demo.iml" filepath="$PROJECT_DIR$/rpc-easy-demo/rpc-easy-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/socket-study/socket-study.iml" filepath="$PROJECT_DIR$/socket-study/socket-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-course-manage-system/spring-boot-course-manage-system.iml" filepath="$PROJECT_DIR$/spring-boot-course-manage-system/spring-boot-course-manage-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-easy-excel-demo/spring-boot-easy-excel-demo.iml" filepath="$PROJECT_DIR$/spring-boot-easy-excel-demo/spring-boot-easy-excel-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-elasticsearch/spring-boot-elasticsearch.iml" filepath="$PROJECT_DIR$/spring-boot-elasticsearch/spring-boot-elasticsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mail/spring-boot-mail.iml" filepath="$PROJECT_DIR$/spring-boot-mail/spring-boot-mail.iml" />
@@ -23,6 +23,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-manage-books/spring-boot-manage-books.iml" filepath="$PROJECT_DIR$/spring-boot-manage-books/spring-boot-manage-books.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-message-board/spring-boot-message-board.iml" filepath="$PROJECT_DIR$/spring-boot-message-board/spring-boot-message-board.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mongodb/spring-boot-mongodb.iml" filepath="$PROJECT_DIR$/spring-boot-mongodb/spring-boot-mongodb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-student-manage-system/spring-boot-student-manage-system.iml" filepath="$PROJECT_DIR$/spring-boot-student-manage-system/spring-boot-student-manage-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-message-board/springboot-message-board.iml" filepath="$PROJECT_DIR$/spring-boot-message-board/springboot-message-board.iml" />
     </modules>
   </component>

@@ -25,6 +25,8 @@
         <option value="$PROJECT_DIR$/spring-boot-mail-practice/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-elasticsearch/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-manage-books/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-student-manage-system/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-course-manage-system/pom.xml" />
       </list>
     </option>
   </component>
