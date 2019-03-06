@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>借阅情况</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/lib/css/homepage.css" rel="stylesheet">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div th:include="../static/common/headbar::headbar"></div>
+<div th:include="./detail_admin::homepage"></div>
+
+<div class="panel panel-default" style="width: 90%;margin-left: 5%">
+    <div class="panel-heading">
+        <h3 class="panel-title" style="text-align:center">借阅情况</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table table-hover" style="text-align:center">
+            <thead>
+            <tr>
+                <th>借阅号</th>
+                <th>书名</th>
+                <th>借阅者</th>
+                <th>借阅时间</th>
+                <th>过期时间</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="res: ${list}">
+                <td th:text="${res.borrowId}"></td>
+                <td th:text="${res.bname}"></td>
+                <td th:text="${res.userName}"></td>
+                <td th:text="${#dates.format(res.btime, 'yyyy-MM-dd')}"></td>
+                <td th:if="${res.rtime==null}" th:text="${#dates.format(res.deadline, 'yyyy-MM-dd')}"></td>
+                <td th:if="${res.rtime!=null}">
+                    <button class="btn btn-warning disabled" th:text="'已于'+${#dates.format(res.rtime, 'yyyy-MM-dd')}+'归还'" type="button"></button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+</body>
+</html>

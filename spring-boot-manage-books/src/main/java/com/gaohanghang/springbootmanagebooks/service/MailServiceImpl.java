@@ -44,11 +44,11 @@ public class MailServiceImpl implements MailService {
         for (MailDetail m : list) {
             String subject = "快还书";
             String userName = m.getUserName();
-            String bname = m.getBtime();
+            String bname = m.getBname();
             String btime = m.getBtime();
             String content = "尊敬的" + userName + ": "
-                    + "您于 " + btime + " 借阅的" + bname
-                    + "已过截止日期，请您尽快还书！";
+                    + "您于 " + btime + " 借阅的《" + bname
+                    + "》还剩1天到还书截止时间，请您尽快还书！";
             sendSimpleMail(m.getEmail(), subject, content);
         }
     }

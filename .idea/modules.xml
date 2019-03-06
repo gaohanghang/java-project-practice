@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.gaohanghang.spring-boot-course-manage-system.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.gaohanghang.spring-boot-course-manage-system.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.gaohanghang.spring-boot-course-manage-system.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.gaohanghang.spring-boot-course-manage-system.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/financial-system/financial-system.iml" filepath="$PROJECT_DIR$/financial-system/financial-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/io-download-picture/io-download-picture.iml" filepath="$PROJECT_DIR$/io-download-picture/io-download-picture.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdbc-easy-meal-card-system/jdbc-easy-meal-card-system.iml" filepath="$PROJECT_DIR$/jdbc-easy-meal-card-system/jdbc-easy-meal-card-system.iml" />
@@ -24,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-message-board/spring-boot-message-board.iml" filepath="$PROJECT_DIR$/spring-boot-message-board/spring-boot-message-board.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mongodb/spring-boot-mongodb.iml" filepath="$PROJECT_DIR$/spring-boot-mongodb/spring-boot-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-student-manage-system/spring-boot-student-manage-system.iml" filepath="$PROJECT_DIR$/spring-boot-student-manage-system/spring-boot-student-manage-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot2_1_study/spring-boot2_1_study.iml" filepath="$PROJECT_DIR$/spring-boot2_1_study/spring-boot2_1_study.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-message-board/springboot-message-board.iml" filepath="$PROJECT_DIR$/spring-boot-message-board/springboot-message-board.iml" />
     </modules>
   </component>

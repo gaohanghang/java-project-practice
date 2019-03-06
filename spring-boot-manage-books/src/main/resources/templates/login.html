@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>图书管理系统</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/lib/css/signin.css" rel="stylesheet">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div th:include="../static/common/headbar::headbar"></div>
+<div class="container">
+    <form action="/managebooks/detail" class="form-signin">
+        <img alt="leader" height="300" src="/static/lib/images/avatar.jpg" width="300">
+        <h2 class="form-signin-heading">登录界面</h2>
+        <label class="sr-only" for="username">用户名</label>
+        <input autofocus class="form-control" id="username" name="username" placeholder="请输入用户名" required type="text">
+        <label class="sr-only" for="password">密码</label>
+        <input class="form-control" id="password" name="password" placeholder="请输入密码" type="password">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+</div>
+
+
+</body>
+</html>

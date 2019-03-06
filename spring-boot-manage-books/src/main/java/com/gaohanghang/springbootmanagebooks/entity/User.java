@@ -3,6 +3,7 @@ package com.gaohanghang.springbootmanagebooks.entity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 /**
  * @Description:
@@ -12,6 +13,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
+@ToString
 public class User {
     private int userId;
     private String userName;

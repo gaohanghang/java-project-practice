@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>图书管理系统</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/lib/css/homepage.css" rel="stylesheet">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div th:include="../static/common/headbar::headbar"></div>
+<div th:fragment="homepage">
+    <nav class="nav nav-tabs" style="margin-top:50px;background-color: #EEEEEE">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/managebooks/homepage">图书借阅</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/managebooks/booklist">预约图书</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            管理图书
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/managebooks/reservation">查看预约情况</a></li>
+                            <li><a href="/managebooks/borrow">退还图书</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" style="color: #000000"><span class="glyphicon glyphicon-user"
+                                                             th:text="${user.userName}+',欢迎您'"></span>&nbsp;</a></li>
+                <li><a href="/managebooks/login"><span class="glyphicon glyphicon-log-in"></span>&nbsp;退出</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<a href="/managebooks/booklist">
+    <div class="square1">
+        <div class="no-logo">预约图书</div>
+    </div>
+</a>
+
+<a href="/managebooks/reservation">
+    <div class="square1">
+        <div class="no-logo">查看预约情况</div>
+    </div>
+</a>
+
+<a href="/managebooks/borrow">
+    <div class="square1">
+        <div class="no-logo">退还图书</div>
+    </div>
+</a>
+
+<a href="#">
+    <div class="square1">
+        <div class="no-logo">更多功能</div>
+    </div>
+</a>
+
+</body>
+</html>
