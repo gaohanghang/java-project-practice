@@ -3,6 +3,7 @@ package com.gaohanghang.springbootmanagebooks.service;
 import com.gaohanghang.springbootmanagebooks.dao.BookMapper;
 import com.gaohanghang.springbootmanagebooks.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -11,6 +12,7 @@ import java.util.List;
  * @author: Gao Hang Hang
  * @date 2019/03/04 13:24
  */
+@Service
 public class BookServiceImpl implements BookService {
 
     @Autowired

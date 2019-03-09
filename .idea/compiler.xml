@@ -22,6 +22,7 @@
         <module name="spring-boot-manage-books" />
         <module name="spring-boot-message-board" />
         <module name="spring-boot-mongodb" />
+        <module name="spring-boot-printer" />
         <module name="spring-boot-student-manage-system" />
         <module name="spring-boot2_1_study" />
         <module name="springboot-message-board" />
@@ -48,6 +49,7 @@
       <module name="spring-boot-message-board" target="1.8" />
       <module name="spring-boot-mongodb" target="1.8" />
       <module name="spring-boot-outh2" target="1.8" />
+      <module name="spring-boot-printer" target="1.8" />
       <module name="spring-boot-student-manage-system" target="1.8" />
       <module name="spring-boot2_1_study" target="1.8" />
       <module name="springboot-message-board" target="1.8" />
@@ -66,6 +68,7 @@
       <module name="spring-boot-message-board" options="-parameters" />
       <module name="spring-boot-mongodb" options="-parameters" />
       <module name="spring-boot-outh2" options="-parameters" />
+      <module name="spring-boot-printer" options="-parameters" />
       <module name="spring-boot-student-manage-system" options="-parameters" />
       <module name="spring-boot2_1_study" options="-parameters" />
       <module name="springboot-message-board" options="-parameters" />
