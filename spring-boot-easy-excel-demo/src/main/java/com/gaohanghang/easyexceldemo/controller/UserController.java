@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.FileInputStream;
 import java.io.IOException;
 
 /**
@@ -36,11 +39,22 @@ public class UserController {
     }
 
     @ApiOperation(value = "导出全部数据到excel")
-    @GetMapping("/excel/download")
+    @GetMapping("/excel/download/test")
     @ResponseBody
-    public Result excelDownload() throws IOException {
+    public Result excelDownloadTest() throws IOException {
         userExcelImportService.download();
         return new Result(true, StatusCode.OK, "excel下载成功");
+    }
+
+    @ApiOperation(value = "导出全部数据到excel")
+    @GetMapping("/excel/download")
+    @ResponseBody
+    public void excelDownload(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        response.setCharacterEncoding(request.getCharacterEncoding());
+        response.setContentType("application/octet-stream");
+        FileInputStream fis = null;
+        userExcelImportService.download();
+
     }
 
     @ApiOperation("分页导出数据到excel")
@@ -60,4 +74,6 @@ public class UserController {
     public Result pageDownload() throws IOException {
         throw new IllegalArgumentException();
     }
+
+
 }

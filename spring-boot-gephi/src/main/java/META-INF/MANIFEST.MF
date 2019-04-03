@@ -1,0 +1,82 @@
+Manifest-Version: 1.0
+Class-Path: org-netbeans-api-templates-RELEASE82.jar HikariCP-3.2.0.ja
+ r org-openide-io-RELEASE82.jar batik-gvt-1.9.1.jar spring-boot-starte
+ r-json-2.1.3.RELEASE.jar spring-boot-autoconfigure-2.1.3.RELEASE.jar 
+ spring-data-commons-2.1.5.RELEASE.jar batik-xml-1.9.1.jar layout-api-
+ 0.9.2.jar commons-csv-1.5.jar jackson-datatype-jsr310-2.9.8.jar org-n
+ etbeans-api-io-RELEASE82.jar org-netbeans-core-startup-RELEASE82.jar 
+ org-openide-awt-RELEASE82.jar postgresql-42.2.5.jar commons-io-1.3.1.
+ jar io-exporter-preview-0.9.2.jar io-processor-plugin-0.9.2.jar swagg
+ er-models-1.5.20.jar jandex-2.0.5.Final.jar gson-2.8.5.jar org-openid
+ e-explorer-RELEASE82.jar org-netbeans-swing-outline-RELEASE82.jar bat
+ ik-util-1.9.1.jar easyexcel-1.1.2-beta5.jar hibernate-validator-6.0.1
+ 4.Final.jar aspectjweaver-1.9.2.jar spring-webmvc-5.1.5.RELEASE.jar i
+ o-exporter-plugin-0.9.2.jar xml-apis-ext-1.3.04.jar statistics-plugin
+ -0.9.2.jar spring-plugin-core-1.2.0.RELEASE.jar spring-expression-5.1
+ .5.RELEASE.jar spring-core-5.1.5.RELEASE.jar commons-collections4-4.1
+ .jar logback-classic-1.2.3.jar springfox-spi-2.9.2.jar org-netbeans-b
+ ootstrap-RELEASE82.jar appearance-api-0.9.2.jar spring-boot-starter-d
+ ata-jpa-2.1.3.RELEASE.jar batik-parser-1.9.1.jar batik-transcoder-1.9
+ .1.jar poi-ooxml-3.17.jar spring-context-5.1.5.RELEASE.jar spring-boo
+ t-starter-logging-2.1.3.RELEASE.jar guava-20.0.jar xalan-2.7.2.jar sp
+ ring-aop-5.1.5.RELEASE.jar javax.annotation-api-1.3.2.jar org-netbean
+ s-modules-masterfs-RELEASE82.jar joda-time-2.10.1.jar db-drivers-0.9.
+ 2.jar jfreechart-1.0.19.jar trove4j-3.0.3.jar antlr-2.7.7.jar org-ope
+ nide-util-RELEASE82.jar jackson-databind-2.9.8.jar asm-all-5.0.1.jar 
+ tomcat-embed-el-9.0.16.jar jboss-logging-3.3.2.Final.jar batik-bridge
+ -1.9.1.jar itextpdf-5.5.12.jar stax-api-1.0.1.jar concurrent-1.3.4.ja
+ r spring-jdbc-5.1.5.RELEASE.jar spring-plugin-metadata-1.2.0.RELEASE.
+ jar poi-ooxml-schemas-3.17.jar preview-plugin-0.9.2.jar jackson-modul
+ e-parameter-names-2.9.8.jar jackson-core-2.9.8.jar filters-impl-0.9.2
+ .jar org-openide-util-lookup-RELEASE82.jar javax.persistence-api-2.2.
+ jar snakeyaml-1.23.jar lombok-1.18.6.jar spring-boot-starter-jdbc-2.1
+ .3.RELEASE.jar batik-constants-1.9.1.jar org-openide-windows-RELEASE8
+ 2.jar colt-1.2.0.jar logback-core-1.2.3.jar spring-boot-starter-web-2
+ .1.3.RELEASE.jar tomcat-embed-core-9.0.16.jar filters-plugin-0.9.2.ja
+ r filters-api-0.9.2.jar org-netbeans-api-progress-RELEASE82.jar commo
+ ns-compress-1.14.jar org-netbeans-swing-plaf-RELEASE82.jar visualizat
+ ion-api-0.9.2.jar spring-aspects-5.1.5.RELEASE.jar spring-boot-2.1.3.
+ RELEASE.jar jackson-annotations-2.9.0.jar asm-4.2.jar io-generator-pl
+ ugin-0.9.2.jar javassist-3.23.1-GA.jar appearance-plugin-0.9.2.jar or
+ g-openide-filesystems-nb-RELEASE82.jar org-openide-util-ui-RELEASE82.
+ jar spring-orm-5.1.5.RELEASE.jar jaxb-api-2.3.1.jar org-netbeans-core
+ -RELEASE82.jar spring-jcl-5.1.5.RELEASE.jar io-importer-api-0.9.2.jar
+  org-openide-filesystems-RELEASE82.jar org-netbeans-api-annotations-c
+ ommon-RELEASE82.jar javax.activation-api-1.2.0.jar commons-codec-1.11
+ .jar log4j-to-slf4j-2.11.2.jar mysql-connector-java-8.0.15.jar org-ne
+ tbeans-libs-asm-RELEASE82.jar spring-boot-starter-tomcat-2.1.3.RELEAS
+ E.jar org-netbeans-api-progress-nb-RELEASE82.jar jul-to-slf4j-1.7.25.
+ jar byte-buddy-1.9.10.jar batik-i18n-1.9.1.jar batik-awt-util-1.9.1.j
+ ar dom4j-2.1.1.jar org-netbeans-api-intent-RELEASE82.jar graphstore-0
+ .5.9.jar mssql-jdbc-6.4.0.jre8.jar batik-ext-1.9.1.jar batik-script-1
+ .9.1.jar spring-beans-5.1.5.RELEASE.jar springfox-core-2.9.2.jar util
+ s-0.9.2.jar org-openide-nodes-RELEASE82.jar mostrecentfiles-api-0.9.2
+ .jar org-openide-modules-RELEASE82.jar springfox-swagger2-2.9.2.jar o
+ rg-netbeans-swing-tabcontrol-RELEASE82.jar algorithms-plugin-0.9.2.ja
+ r fastutil-8.1.0.jar classmate-1.4.0.jar jcommon-1.0.23.jar javax.tra
+ nsaction-api-1.3.jar spring-boot-starter-aop-2.1.3.RELEASE.jar spring
+ fox-spring-web-2.9.2.jar org-netbeans-modules-queries-RELEASE82.jar s
+ pring-boot-starter-2.1.3.RELEASE.jar io-exporter-api-0.9.2.jar curves
+ api-1.04.jar swagger-annotations-1.5.20.jar org-openide-actions-RELEA
+ SE82.jar stax-utils-snapshot-20100402.jar spring-tx-5.1.5.RELEASE.jar
+  preview-api-0.9.2.jar org-openide-text-RELEASE82.jar mapstruct-1.2.0
+ .Final.jar log4j-api-2.11.2.jar org-netbeans-modules-editor-mimelooku
+ p-RELEASE82.jar sqlite-jdbc-3.25.2.jar hibernate-core-5.3.7.Final.jar
+  xmlgraphics-commons-2.2.jar batik-dom-1.9.1.jar gephi-toolkit-0.9.2.
+ jar xmlbeans-2.6.0.jar org-openide-loaders-RELEASE82.jar springfox-sw
+ agger-ui-2.9.2.jar batik-css-1.9.1.jar cglib-3.1.jar org-netbeans-mod
+ ules-sampler-RELEASE82.jar io-generator-api-0.9.2.jar jackson-datatyp
+ e-jdk8-2.9.8.jar springfox-schema-2.9.2.jar hibernate-commons-annotat
+ ions-5.0.4.Final.jar commons-logging-1.0.4.jar tomcat-embed-websocket
+ -9.0.16.jar datalab-api-0.9.2.jar org-openide-dialogs-RELEASE82.jar l
+ ayout-plugin-0.9.2.jar statistics-api-0.9.2.jar serializer-2.7.2.jar 
+ poi-3.17.jar graph-api-0.9.2.jar spring-data-jpa-2.1.5.RELEASE.jar ba
+ tik-wrapper-0.9.2.jar springfox-swagger-common-2.9.2.jar spring-web-5
+ .1.5.RELEASE.jar batik-svg-dom-1.9.1.jar core-library-wrapper-0.9.2.j
+ ar org-netbeans-modules-keyring-RELEASE82.jar io-importer-plugin-0.9.
+ 2.jar batik-svggen-1.9.1.jar utils-longtask-0.9.2.jar org-netbeans-co
+ re-startup-base-RELEASE82.jar ui-propertyeditor-0.9.2.jar project-api
+ -0.9.2.jar slf4j-api-1.7.25.jar batik-anim-1.9.1.jar validation-api-2
+ .0.1.Final.jar
+Main-Class: com.gaohanghang.springbootgephi.SpringBootGephiApplication
+

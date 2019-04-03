@@ -1,9 +1,6 @@
 package com.gaohanghang.springbootmanagebooks.controller;
 
-import com.gaohanghang.springbootmanagebooks.entity.BookList;
-import com.gaohanghang.springbootmanagebooks.entity.Reservation;
-import com.gaohanghang.springbootmanagebooks.entity.ReservationResult;
-import com.gaohanghang.springbootmanagebooks.entity.User;
+import com.gaohanghang.springbootmanagebooks.entity.*;
 import com.gaohanghang.springbootmanagebooks.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -79,6 +76,37 @@ public class ReaderController {
         return "user_booklist";
     }
 
+    // 预约详情
     @GetMapping(value = "/revervation")
-    public void
+    public String listResListById(Model model, HttpServletRequest request) {
+        User user = (User) request.getSession().getAttribute("user");
+        model.addAttribute("user", user);
+        List<ReservationDetail> list = bookService.getResById(user);
+        model.addAttribute("list", list);
+        return "user_reservation";
+    }
+
+    // 借书详情
+    @GetMapping(value = "/borrow")
+    public String listBorListById(Model model, HttpServletRequest request) {
+        User user = (User) request.getSession().getAttribute("user");
+        model.addAttribute("user", user);
+        List<BorrowDetail> list = bookService.getBorInfo(user);
+        model.addAttribute("list", list);
+        return "user_borrow";
+    }
+
+    // 还书
+    @GetMapping("{borrowId}/return")
+    public String returnBookById(Model model,
+                                 HttpServletRequest request,
+                                 @PathVariable("borrowId") Integer borrowId) {
+        User user = (User) request.getSession().getAttribute("user");
+        model.addAttribute("user", user);
+        bookService.returnBookById(borrowId);
+        List<BorrowDetail> list = bookService.getBorInfo(user);
+        model.addAttribute("list", list);
+        return "user_borrow";
+    }
+
 }

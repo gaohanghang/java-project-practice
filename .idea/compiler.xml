@@ -17,11 +17,14 @@
         <module name="spring-boot-course-manage-system" />
         <module name="spring-boot-easy-excel-demo" />
         <module name="spring-boot-elasticsearch" />
+        <module name="spring-boot-file" />
+        <module name="spring-boot-gephi" />
         <module name="spring-boot-mail" />
         <module name="spring-boot-mail-practice" />
         <module name="spring-boot-manage-books" />
         <module name="spring-boot-message-board" />
         <module name="spring-boot-mongodb" />
+        <module name="spring-boot-online-executor" />
         <module name="spring-boot-printer" />
         <module name="spring-boot-student-manage-system" />
         <module name="spring-boot2_1_study" />
@@ -43,11 +46,15 @@
       <module name="spring-boot-course-manage-system" target="1.8" />
       <module name="spring-boot-easy-excel-demo" target="1.8" />
       <module name="spring-boot-elasticsearch" target="1.8" />
+      <module name="spring-boot-file" target="1.8" />
+      <module name="spring-boot-gephi" target="1.8" />
+      <module name="spring-boot-google-transtlate" target="1.8" />
       <module name="spring-boot-mail" target="1.8" />
       <module name="spring-boot-mail-practice" target="1.8" />
       <module name="spring-boot-manage-books" target="1.8" />
       <module name="spring-boot-message-board" target="1.8" />
       <module name="spring-boot-mongodb" target="1.8" />
+      <module name="spring-boot-online-executor" target="1.8" />
       <module name="spring-boot-outh2" target="1.8" />
       <module name="spring-boot-printer" target="1.8" />
       <module name="spring-boot-student-manage-system" target="1.8" />
@@ -62,11 +69,15 @@
       <module name="spring-boot-course-manage-system" options="-parameters" />
       <module name="spring-boot-easy-excel-demo" options="-parameters" />
       <module name="spring-boot-elasticsearch" options="-parameters" />
+      <module name="spring-boot-file" options="-parameters" />
+      <module name="spring-boot-gephi" options="-parameters" />
+      <module name="spring-boot-google-transtlate" options="-parameters" />
       <module name="spring-boot-mail" options="-parameters" />
       <module name="spring-boot-mail-practice" options="-parameters" />
       <module name="spring-boot-manage-books" options="-parameters" />
       <module name="spring-boot-message-board" options="-parameters" />
       <module name="spring-boot-mongodb" options="-parameters" />
+      <module name="spring-boot-online-executor" options="-parameters" />
       <module name="spring-boot-outh2" options="-parameters" />
       <module name="spring-boot-printer" options="-parameters" />
       <module name="spring-boot-student-manage-system" options="-parameters" />

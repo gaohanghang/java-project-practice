@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+<p>Get your greeting <a href="/greeting">here</a></p>
+<form action="/upload" enctype="multipart/form-data" method="POST">
+    文件：<input name="test" type="file"/>
+    <input type="submit" />
+</form>
+<a href="/download">下载test</a>
+<p>多文件上传</p>
+<form action="/batch/upload" enctype="multipart/form-data" method="POST">
+    <p>文件1：<input name="file" type="file" /></p>
+    <p>文件2：<input name="file" type="file" /></p>
+    <p><input type="submit" value="上传" /></p>
+</form>
+</html>

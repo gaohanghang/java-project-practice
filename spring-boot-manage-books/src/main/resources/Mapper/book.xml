@@ -4,24 +4,51 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.gaohanghang.springbootmanagebooks.dao.BookMapper">
+
+    <!--书籍管理-->
+
     <select id="getList" resultType="BookList">
         select * from booklist
     </select>
 
-    <select id="getListByQuery" parameterType="String" resultType="BookList">
-        select * from booklist where bname like CONCAT('%', '${query}', '%')
+    <select id="getListByName" parameterType="String" resultType="BookList">
+        select * from booklist where bname like CONCAT('%', '${name}', '%')
     </select>
 
     <select id="getListById" parameterType="int" resultType="BookList">
         select * from borrow
     </select>
 
+    <select id="getBorrowDetailByUserId" resultType="BorrowDetail" parameterType="User">
+        select borrow_id, bname, btime, deadline, rtime from borrow_detail where user_id=#{user.userId}
+    </select>
+
+    <insert id="addBookList">
+        call library.new_book(#{booklist.isbn}, #{booklist.bname}, #{booklist.publisher}, #{booklist.writer},
+                              #{booklist.ptime}, #{booklist.number}, #{booklist.operator}, #{location}, #{state})
+    </insert>
+
+    <!--预约管理-->
+
     <!--拿到可以被预约的图书-->
     <select id="getRes" parameterType="String" resultType="Book">
         select * from book where isbn=#{isbn} and (state=0 or (state=2 and book_id not in (select reservation.book_id from reservation))) order by state
     </select>
 
+    <!--预约登记-->
+    <insert id="insertResInfo">
+        insert into reservation (user_id, book_id, deadline) values (#{user.userId}, #{book.bookId}, date_add(now(),interval 10 day))
+    </insert>
+
+    <select id="getReservationByUserId" resultType="Reservation">
+        select * from reservation where book_id=#{book.bookId} and user_id=#{user.userId}
+    </select>
+
+    <select id="getReservationDetailByUserId" resultType="ReservationDetail">
+        select reservation_id, bname, deadline, user_name, book_id from reservation_detail where user_id = #{user.userId};
+    </select>
 
 
+    <!--还书管理-->
 
 </mapper>

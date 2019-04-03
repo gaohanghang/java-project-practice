@@ -1,0 +1,7 @@
+server:
+  port: 8888
+spring:
+  datasource:
+    url: jdbc:postgresql://10.0.0.156:5432/cobweb
+    username: postgres
+    password: root

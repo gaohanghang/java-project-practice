@@ -64,6 +64,22 @@ public class UserExcelImportService {
         }
     }
 
+    public void downloadTest() throws IOException {
+        OutputStream outputStream = new FileOutputStream("/Users/gaohanghang/2007.xlsx");
+        ExcelWriter writer = EasyExcelFactory.getWriter(outputStream);
+        // 写第一个sheet, sheet1  数据全是List<String> 无模型映射关系
+        Sheet sheet1 = new Sheet(1, 3);
+        sheet1.setSheetName("第一个sheet");
+
+        //设置列宽 设置每列的宽度
+        sheet1.setHead(createTestListStringHead());
+        //or 设置自适应宽度
+        sheet1.setAutoWidth(Boolean.TRUE);
+        writer.write1(createTestListObject(), sheet1);
+
+        writer.finish();
+    }
+
     public void download() throws IOException {
         OutputStream outputStream = new FileOutputStream("/Users/gaohanghang/2007.xlsx");
         ExcelWriter writer = EasyExcelFactory.getWriter(outputStream);
