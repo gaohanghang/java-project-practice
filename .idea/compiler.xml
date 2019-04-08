@@ -6,29 +6,30 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="financial-system" />
-        <module name="io-download-picture" />
-        <module name="jdbc-easy-meal-card-system" />
+        <module name="spring-boot-miaosha" />
+        <module name="spring-boot-printer" />
         <module name="jdbc-games-store" />
-        <module name="jdbc-girl" />
-        <module name="jms-spring" />
+        <module name="spring-boot-mail-practice" />
+        <module name="jdbc-easy-meal-card-system" />
+        <module name="io-download-picture" />
+        <module name="financial-system" />
         <module name="jms-test" />
-        <module name="project-common" />
-        <module name="spring-boot-course-manage-system" />
         <module name="spring-boot-easy-excel-demo" />
         <module name="spring-boot-elasticsearch" />
-        <module name="spring-boot-file" />
-        <module name="spring-boot-gephi" />
-        <module name="spring-boot-mail" />
-        <module name="spring-boot-mail-practice" />
-        <module name="spring-boot-manage-books" />
-        <module name="spring-boot-message-board" />
-        <module name="spring-boot-mongodb" />
+        <module name="project-common" />
         <module name="spring-boot-online-executor" />
-        <module name="spring-boot-printer" />
-        <module name="spring-boot-student-manage-system" />
         <module name="spring-boot2_1_study" />
+        <module name="spring-boot-gephi" />
+        <module name="spring-boot-course-manage-system" />
+        <module name="spring-boot-mail" />
+        <module name="spring-boot-file" />
+        <module name="spring-boot-message-board" />
         <module name="springboot-message-board" />
+        <module name="spring-boot-manage-books" />
+        <module name="spring-boot-student-manage-system" />
+        <module name="spring-boot-mongodb" />
+        <module name="jms-spring" />
+        <module name="jdbc-girl" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -53,6 +54,7 @@
       <module name="spring-boot-mail-practice" target="1.8" />
       <module name="spring-boot-manage-books" target="1.8" />
       <module name="spring-boot-message-board" target="1.8" />
+      <module name="spring-boot-miaosha" target="1.8" />
       <module name="spring-boot-mongodb" target="1.8" />
       <module name="spring-boot-online-executor" target="1.8" />
       <module name="spring-boot-outh2" target="1.8" />
@@ -76,6 +78,7 @@
       <module name="spring-boot-mail-practice" options="-parameters" />
       <module name="spring-boot-manage-books" options="-parameters" />
       <module name="spring-boot-message-board" options="-parameters" />
+      <module name="spring-boot-miaosha" options="-parameters" />
       <module name="spring-boot-mongodb" options="-parameters" />
       <module name="spring-boot-online-executor" options="-parameters" />
       <module name="spring-boot-outh2" options="-parameters" />

@@ -1,8 +1,10 @@
 package com.gaohanghang.springbootgephi.jsonexporter.model;
 
+
 import java.util.Objects;
 
 public class Color {
+
     private String color;
 
     private String highlight;

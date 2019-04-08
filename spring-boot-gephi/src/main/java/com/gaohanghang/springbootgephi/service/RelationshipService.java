@@ -2,7 +2,6 @@ package com.gaohanghang.springbootgephi.service;
 
 import com.alibaba.excel.EasyExcelFactory;
 import com.alibaba.excel.metadata.Sheet;
-
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.gaohanghang.springbootgephi.dao.RelationShipRepository;
@@ -16,7 +15,6 @@ import com.google.gson.Gson;
 import org.gephi.graph.api.*;
 import org.gephi.io.database.drivers.PostgreSQLDriver;
 import org.gephi.io.database.drivers.SQLUtils;
-import org.gephi.io.exporter.api.ExportController;
 import org.gephi.io.importer.api.Container;
 import org.gephi.io.importer.api.EdgeDirectionDefault;
 import org.gephi.io.importer.api.ImportController;
@@ -28,13 +26,11 @@ import org.gephi.layout.plugin.force.yifanHu.YifanHuLayout;
 import org.gephi.preview.types.EdgeColor;
 import org.gephi.project.api.ProjectController;
 import org.gephi.project.api.Workspace;
-import org.gephi.utils.progress.Progress;
 import org.openide.util.Lookup;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -117,7 +113,7 @@ public class RelationshipService {
         db.setSQLDriver(new PostgreSQLDriver());
         //db.setSQLDriver(new SQLServerDriver());
         db.setPort(5432);
-        db.setNodeQuery("SELECT DISTINCT sender as id,sender as label FROM relationship UNION SELECT DISTINCT receiver as id,receiver as label  FROM relationship;");
+        db.setNodeQuery("SELECT DISTINCT sender as id,sender as label FROM relationship UNION SELECT DISTINCT receiver as id,receiver as label FROM relationship;");
         db.setEdgeQuery("SELECT sender AS source, receiver AS target, concat(topic,' ',begin_time) AS label, weight FROM relationship");
         ImporterEdgeList edgeListImporter = new ImporterEdgeList();
         Container container = importController.importDatabase(db, edgeListImporter);

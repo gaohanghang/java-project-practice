@@ -87,6 +87,7 @@ public class ExportJSON implements GraphExporter, LongTask, CharacterExporter {
                     jNode.setY(y);
                     jNode.setSize(size);
                     jNode.setColor(color);
+                    jNode.setGroup("QQ");
 
 
                     for (Column col : attModel) {
@@ -151,7 +152,7 @@ public class ExportJSON implements GraphExporter, LongTask, CharacterExporter {
                         //no colour has been set. Colour will be mix of connected nodes
 
                     }
-                    Color color = new Color("#022240", "#d70007");
+                    Color color = new Color("black", "red");
                     jEdge.setColor(color);
 
                     jEdges.add(jEdge);
