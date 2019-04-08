@@ -1,4 +1,5 @@
 # spring-boot-mail
+https://gitee.com/52itstyle/spring-boot-mail
 
 邮件发送服务，文本，附件，模板，队列，多线程，定时任务实现多种功能！！！
 
