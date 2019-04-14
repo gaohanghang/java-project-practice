@@ -27,8 +27,6 @@
 //import org.gephi.io.database.drivers.PostgreSQLDriver;
 //import org.gephi.io.database.drivers.SQLUtils;
 //import org.gephi.io.exporter.api.ExportController;
-//import org.gephi.io.exporter.spi.GraphExporter;
-//import org.gephi.io.exporter.spi.GraphFileExporterBuilder;
 //import org.gephi.io.importer.api.Container;
 //import org.gephi.io.importer.api.EdgeDirectionDefault;
 //import org.gephi.io.importer.api.ImportController;
@@ -44,7 +42,6 @@
 //import java.io.*;
 //import java.sql.Connection;
 //import java.sql.SQLException;
-//import java.sql.Statement;
 //
 ///**
 // * This demo shows several actions done with the toolkit, aiming to do a

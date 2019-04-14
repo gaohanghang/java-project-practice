@@ -15,3 +15,5 @@
 [SpringBoot实现邮件发送 未完成](/spring-boot-mail)
 
 [SpringBoot操作MongoDB数据库](/spring-boot-mongodb)
+
+[基于SpringBoot的在线Java IDE](/spring-boot-online-executor)

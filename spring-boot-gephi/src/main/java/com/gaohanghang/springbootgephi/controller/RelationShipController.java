@@ -4,11 +4,9 @@ package com.gaohanghang.springbootgephi.controller;
 import com.gaohanghang.springbootgephi.entity.Result;
 import com.gaohanghang.springbootgephi.entity.StatusCode;
 import com.gaohanghang.springbootgephi.service.RelationshipService;
-import com.google.gson.Gson;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
@@ -55,4 +53,6 @@ public class RelationShipController {
     public String getJson() throws IOException {
         return relationshipService.getJson();
     }
+
+
 }

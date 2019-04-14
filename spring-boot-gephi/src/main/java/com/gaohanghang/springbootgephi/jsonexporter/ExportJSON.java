@@ -2,6 +2,7 @@ package com.gaohanghang.springbootgephi.jsonexporter;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
+import com.gaohanghang.springbootgephi.common.enums.Group;
 import com.gaohanghang.springbootgephi.jsonexporter.model.Color;
 import com.gaohanghang.springbootgephi.jsonexporter.model.GraphEdge;
 import com.gaohanghang.springbootgephi.jsonexporter.model.GraphElement;
@@ -87,7 +88,7 @@ public class ExportJSON implements GraphExporter, LongTask, CharacterExporter {
                     jNode.setY(y);
                     jNode.setSize(size);
                     jNode.setColor(color);
-                    jNode.setGroup("QQ");
+                    jNode.setGroup(Group.QQ.getCode());
 
 
                     for (Column col : attModel) {
