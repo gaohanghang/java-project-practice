@@ -44,7 +44,7 @@
       <module name="jdbc-girl" target="1.5" />
       <module name="jms-spring" target="1.5" />
       <module name="jms-test" target="1.5" />
-      <module name="nio-group-chat-software" target="1.5" />
+      <module name="nio-group-chat-software" target="7" />
       <module name="project-common" target="1.5" />
       <module name="socketdemo" target="1.5" />
       <module name="spring-boot-course-manage-system" target="1.8" />
