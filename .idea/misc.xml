@@ -34,6 +34,8 @@
         <option value="$PROJECT_DIR$/spring-boot-online-executor/pom.xml" />
         <option value="$PROJECT_DIR$/springbootmiaosha/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-miaosha/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-google-jib/pom.xml" />
+        <option value="$PROJECT_DIR$/nio-group-chat-software/pom.xml" />
       </list>
     </option>
   </component>
