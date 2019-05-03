@@ -17,3 +17,7 @@
 [SpringBoot操作MongoDB数据库](/spring-boot-mongodb)
 
 [基于SpringBoot的在线Java IDE](/spring-boot-online-executor)
+
+[SpringBoot操作Kafka](/kafka-example-imooc)
+
+[java生成二维码](/qrcode-img-svg)

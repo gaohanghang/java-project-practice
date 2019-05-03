@@ -36,6 +36,9 @@
         <option value="$PROJECT_DIR$/spring-boot-miaosha/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-google-jib/pom.xml" />
         <option value="$PROJECT_DIR$/nio-group-chat-software/pom.xml" />
+        <option value="$PROJECT_DIR$/issues-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-example-imooc/pom.xml" />
+        <option value="$PROJECT_DIR$/qrcode-img-svg/pom.xml" />
       </list>
     </option>
   </component>
