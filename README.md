@@ -21,3 +21,5 @@
 [SpringBoot操作Kafka](/kafka-example-imooc)
 
 [java生成二维码](/qrcode-img-svg)
+
+[使用Spring StateMachine实现一个状态机](/spring-boot-statemachine)

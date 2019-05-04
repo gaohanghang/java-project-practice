@@ -6,35 +6,36 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="jms-spring" />
-        <module name="spring-boot-printer" />
-        <module name="jdbc-girl" />
-        <module name="jdbc-games-store" />
-        <module name="issues-dashboard" />
-        <module name="spring-boot-mail-practice" />
-        <module name="jdbc-easy-meal-card-system" />
-        <module name="io-download-picture" />
-        <module name="spring-boot-miaosha" />
         <module name="demo" />
-        <module name="jms-test" />
-        <module name="spring-boot-easy-excel-demo" />
-        <module name="spring-boot-elasticsearch" />
-        <module name="project-common" />
-        <module name="spring-boot-online-executor" />
-        <module name="spring-boot2_1_study" />
-        <module name="spring-boot-file" />
-        <module name="nio-group-chat-software" />
-        <module name="spring-boot-course-manage-system" />
-        <module name="spring-boot-mail" />
-        <module name="spring-boot-gephi" />
-        <module name="spring-boot-message-board" />
-        <module name="springboot-message-board" />
-        <module name="spring-boot-manage-books" />
+        <module name="spring-boot-mail-practice" />
+        <module name="spring-boot-miaosha" />
         <module name="financial-system" />
-        <module name="spring-boot-google-jib" />
-        <module name="spring-boot-mongodb" />
+        <module name="springboot-message-board" />
+        <module name="issues-dashboard" />
+        <module name="jdbc-easy-meal-card-system" />
+        <module name="spring-boot-printer" />
+        <module name="spring-boot-gephi" />
+        <module name="spring-boot-mail" />
+        <module name="spring-boot-easy-excel-demo" />
+        <module name="jms-test" />
         <module name="qrcode-img-svg" />
+        <module name="project-common" />
+        <module name="spring-boot-message-board" />
+        <module name="spring-boot-mongodb" />
+        <module name="spring-boot-online-executor" />
+        <module name="nio-group-chat-software" />
+        <module name="spring-boot-file" />
+        <module name="spring-boot-manage-books" />
+        <module name="jdbc-games-store" />
+        <module name="spring-boot-statemachine" />
+        <module name="spring-boot-elasticsearch" />
+        <module name="spring-boot2_1_study" />
+        <module name="io-download-picture" />
+        <module name="spring-boot-google-jib" />
+        <module name="spring-boot-course-manage-system" />
         <module name="spring-boot-student-manage-system" />
+        <module name="jdbc-girl" />
+        <module name="jms-spring" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -69,6 +70,7 @@
       <module name="spring-boot-online-executor" target="1.8" />
       <module name="spring-boot-outh2" target="1.8" />
       <module name="spring-boot-printer" target="1.8" />
+      <module name="spring-boot-statemachine" target="1.8" />
       <module name="spring-boot-student-manage-system" target="1.8" />
       <module name="spring-boot2_1_study" target="1.8" />
       <module name="springboot-message-board" target="1.8" />
@@ -96,6 +98,7 @@
       <module name="spring-boot-online-executor" options="-parameters" />
       <module name="spring-boot-outh2" options="-parameters" />
       <module name="spring-boot-printer" options="-parameters" />
+      <module name="spring-boot-statemachine" options="-parameters" />
       <module name="spring-boot-student-manage-system" options="-parameters" />
       <module name="spring-boot2_1_study" options="-parameters" />
       <module name="springboot-message-board" options="-parameters" />
