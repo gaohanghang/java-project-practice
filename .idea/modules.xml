@@ -34,6 +34,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-statemachine/spring-boot-statemachine.iml" filepath="$PROJECT_DIR$/spring-boot-statemachine/spring-boot-statemachine.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-student-manage-system/spring-boot-student-manage-system.iml" filepath="$PROJECT_DIR$/spring-boot-student-manage-system/spring-boot-student-manage-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot2_1_study/spring-boot2_1_study.iml" filepath="$PROJECT_DIR$/spring-boot2_1_study/spring-boot2_1_study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-file-uploader/springboot-file-uploader.iml" filepath="$PROJECT_DIR$/springboot-file-uploader/springboot-file-uploader.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-message-board/springboot-message-board.iml" filepath="$PROJECT_DIR$/spring-boot-message-board/springboot-message-board.iml" />
     </modules>
   </component>

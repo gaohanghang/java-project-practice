@@ -40,6 +40,7 @@
         <option value="$PROJECT_DIR$/kafka-example-imooc/pom.xml" />
         <option value="$PROJECT_DIR$/qrcode-img-svg/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-statemachine/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-file-uploader/pom.xml" />
       </list>
     </option>
   </component>
