@@ -14,7 +14,7 @@
         <module name="issues-dashboard" />
         <module name="jdbc-easy-meal-card-system" />
         <module name="spring-boot-printer" />
-        <module name="financial-system" />
+        <module name="spring-boot-gephi" />
         <module name="spring-boot-mail" />
         <module name="spring-boot-easy-excel-demo" />
         <module name="jms-test" />
@@ -22,7 +22,7 @@
         <module name="project-common" />
         <module name="spring-boot-message-board" />
         <module name="spring-boot-statemachine" />
-        <module name="spring-boot-gephi" />
+        <module name="spring-boot-mongodb" />
         <module name="spring-boot-online-executor" />
         <module name="nio-group-chat-software" />
         <module name="spring-boot-file" />
@@ -30,13 +30,13 @@
         <module name="jdbc-games-store" />
         <module name="jms-spring" />
         <module name="spring-boot-elasticsearch" />
-        <module name="spring-boot-mongodb" />
         <module name="spring-boot2_1_study" />
         <module name="io-download-picture" />
         <module name="spring-boot-google-jib" />
         <module name="spring-boot-course-manage-system" />
         <module name="spring-boot-student-manage-system" />
         <module name="jdbc-girl" />
+        <module name="financial-system" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -103,6 +103,7 @@
       <module name="spring-boot-statemachine" options="-parameters" />
       <module name="spring-boot-student-manage-system" options="-parameters" />
       <module name="spring-boot2_1_study" options="-parameters" />
+      <module name="springboot-file-uploader" options="-parameters" />
       <module name="springboot-message-board" options="-parameters" />
     </option>
   </component>

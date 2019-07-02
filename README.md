@@ -25,3 +25,23 @@
 [使用Spring StateMachine实现一个状态机](/spring-boot-statemachine)
 
 [SpringBoot实现文件上传系统](/springboot-file-uploader)
+
+[springboot实现短链接系统](https://github.com/hacker-and-painter/springboot-short-url)
+
+[springboot 实现数据库文档生成器](https://github.com/hacker-and-painter/database-doc-generator)
+
+[基于SpringBoot2+Freemarker的代码生成器](https://github.com/hacker-and-painter/spring-boot-code-generator)
+
+[使用 Spring Data JPA 在应用程序中批量插入的示例](https://github.com/hacker-and-painter/springboot-jpa-batch-insert)
+
+[使用 spring-boot-admin 对 Spring Boot 服务进行监控](https://github.com/hacker-and-painter/springboot-admin)
+
+[使用 Spring Boot + Vue 实现 TODO 应用](https://github.com/hacker-and-painter/springboot-statemachine)
+
+[oepncv 实现人脸检测与笑容检测](https://github.com/hacker-and-painter/opencv)
+
+[restful接口最佳实践](https://github.com/hacker-and-painter/spring-data-rest)
+
+[ Spring Boot 使用线程池实现将业务逻辑提交到线程池中异步执行](https://github.com/hacker-and-painter/spring-boot-threadpool)
+
+
