@@ -47,3 +47,5 @@
 [使用 jenkins 实现 Spring Boot 项目自动化部署](https://github.com/gaohanghang/springboot-jenkins)
 
 [Spring Cloud Zuul作为网关的分布式系统中整合Swagger文档](https://github.com/gaohanghang/spring-boot-swagger-distributed-demo)
+
+[《Java的并发多线程实战》视频源代码](https://github.com/gaohanghang/Java-Concurrency-Multithreading-in-Practice)
