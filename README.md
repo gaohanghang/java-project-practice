@@ -49,3 +49,11 @@
 [Spring Cloud Zuul作为网关的分布式系统中整合Swagger文档](https://github.com/gaohanghang/spring-boot-swagger-distributed-demo)
 
 [《Java的并发多线程实战》视频源代码](https://github.com/gaohanghang/Java-Concurrency-Multithreading-in-Practice)
+
+[利用 Spring Boot & Redis 实现短链接服务](https://github.com/gaohanghang/spring-boot-sample-url-shortener)
+
+**运行效果**
+
+![](https://raw.githubusercontent.com/gaohanghang/images/master/img20190904001549.png)
+
+
