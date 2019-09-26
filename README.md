@@ -58,7 +58,7 @@
 
 **运行效果**
 
-![https://raw.githubusercontent.com/gaohanghang/images/master/img20190611010142.png]
+![](https://raw.githubusercontent.com/gaohanghang/images/master/img20190611010142.png)
 
 ### 20. [oepncv 实现人脸检测与笑容检测](https://github.com/hacker-and-painter/opencv)
 
