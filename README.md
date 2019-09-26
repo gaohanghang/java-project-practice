@@ -62,12 +62,18 @@
 
 ### 21. [restful接口最佳实践](https://github.com/hacker-and-painter/spring-data-rest)
 
+**运行效果**
+
+![](https://raw.githubusercontent.com/gaohanghang/images/master/img20190530203732.png)
 
 ### 22. [Spring Boot 使用线程池实现将业务逻辑提交到线程池中异步执行](https://github.com/hacker-and-painter/spring-boot-threadpool)
 
 
 ### 23. [使用 jenkins 实现 Spring Boot 项目自动化部署](https://github.com/gaohanghang/springboot-jenkins)
 
+**运行效果**
+
+![](https://raw.githubusercontent.com/gaohanghang/images/master/img20190804000548.png)
 
 ### 24. [Spring Cloud Zuul作为网关的分布式系统中整合Swagger文档](https://github.com/gaohanghang/spring-boot-swagger-distributed-demo)
 
