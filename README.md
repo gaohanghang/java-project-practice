@@ -97,4 +97,9 @@
 
 ![](https://raw.githubusercontent.com/gaohanghang/images/master/img20190831185759.png)
 
+### 28. [使用Spring Boot搭建简单GraphQL服务](https://github.com/gaohanghang/springboot-graphql)
+
+**运行效果**
+
+![](https://raw.githubusercontent.com/gaohanghang/images/master/img20190901180443.png)
 
