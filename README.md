@@ -106,3 +106,11 @@
 
 ![](https://raw.githubusercontent.com/gaohanghang/images/master/img20190901180443.png)
 
+### 29. [Spring Boot 一个依赖搞定 session 共享](https://github.com/hacker-and-painter/spring-boot-session)
+
+> 只需要添加好依赖，配置好 Redis，就可以很方便的搞定 session 共享
+
+![](https://raw.githubusercontent.com/gaohanghang/images/master/img20190615212240.png)
+
+
+
