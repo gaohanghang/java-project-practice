@@ -56,6 +56,9 @@
 
 ### 19. [使用 Spring Boot + Vue 实现 TODO 应用](https://github.com/hacker-and-painter/springboot-statemachine)
 
+**运行效果**
+
+![](https://raw.githubusercontent.com/gaohanghang/images/master/img20190611010142.png)
 
 ### 20. [oepncv 实现人脸检测与笑容检测](https://github.com/hacker-and-painter/opencv)
 
@@ -103,4 +106,12 @@
 
 ![](https://raw.githubusercontent.com/gaohanghang/images/master/img20190901180443.png)
 
-### 29. [Spring Boot 整合 Shiro ](https://segmentfault.com/a/1190000019440231)
+### 29. [Spring Boot 一个依赖搞定 session 共享](https://github.com/hacker-and-painter/spring-boot-session)
+
+> 只需要添加好依赖，配置好 Redis，就可以很方便的搞定 session 共享
+
+![](https://raw.githubusercontent.com/gaohanghang/images/master/img20190615212240.png)
+
+
+
+### 30. [Spring Boot 整合 Shiro ](https://segmentfault.com/a/1190000019440231)
