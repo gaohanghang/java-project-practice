@@ -1,0 +1,15 @@
+shiro:
+  # 表示登录页面
+  loginUrl: /login
+  sessionManager:
+    # 表示是否允许将sessionId 放到 cookie 中
+    sessionIdCookieEnabled: true
+    # 表示是否允许将 sessionId 放到 Url 地址拦中
+    sessionIdUrlRewritingEnabled: true
+  # 表示登录页面
+  successUrl: /index
+  # 表示访问未获授权的页面时，默认的跳转路径
+  unauthorizedUrl: /unauthorizedurl
+  # 表示开启 shiro
+  web:
+    enabled: true

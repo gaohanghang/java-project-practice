@@ -103,3 +103,4 @@
 
 ![](https://raw.githubusercontent.com/gaohanghang/images/master/img20190901180443.png)
 
+### 29. [Spring Boot 整合 Shiro ](https://segmentfault.com/a/1190000019440231)
